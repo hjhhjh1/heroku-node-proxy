@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>通用Web代理 </title>
+  <title>通用Web代理</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- header font -->
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
@@ -21,7 +21,6 @@
     .container { background-color: #3F4038; border-color: #5B3E38}
     a { color: #62BECB; }
     a:hover {color: #82DEEB }
-
 	#error {  border:1px dotted white; background: brown; }
     
     /* stripes and borders */
@@ -74,9 +73,9 @@
           <input type="submit" value="浏览"/>
         </p>
       </form>
+	    </div>
       <h3><center><a href="./proxy/https://www.google.com/" target="_blank">Google搜索</a></center></h3>
-
-    </div>
+	  
   
   </div>
 	<script>
@@ -84,14 +83,14 @@
 			return document.getElementById(id);
 		}
 		
-		 $('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
-			if(url.substr(0,4) != "http"){
-				url = "http://" + url;
-			}
-			window.location.pathname = 'proxy/' + url;
-			return false;
-		};
+		// $('unblocker-form').onsubmit = function(){
+		//	var url = $('url').value;
+		//	if(url.substr(0,4) != "http"){
+		//		url = "http://" + url;
+		//	}
+		//	window.location.pathname = 'proxy/' + url;
+		//	return false;
+		//};
 		
 		function checkError(){
 			var search = window.location.search;
